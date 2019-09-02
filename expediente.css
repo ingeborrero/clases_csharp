@@ -1,0 +1,705 @@
+@font-face {
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --v_color_primario: blue;
+
+}
+
+.boxModalWindow {
+    background-color: rgba(0,0,0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.boxModalWindow2 {
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.boxModalWindow3 {
+    background-color: rgba(0,0,0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.clsboxModal {
+    border-radius: 7px;
+}
+
+.zonaboxTituloWindowModal {
+    color: #49616f;
+}
+
+.boxTitleHeader .btnNotify.CERRADO {
+    background-color: #FF6C6D;
+}
+
+.boxTitleHeader .btnNotify.ABIERTO{
+    background-color: #20c997;
+}
+
+.boxTitleHeader .btnNotify.TRASLADADO {
+    background-color: #00B8B0;
+}
+
+.boxTitleHeader .btnNotify.OTROS {
+    background-color: #FFFFFF;
+}
+
+.contentViewer.cvconsulta {
+    left: 0% !important;
+    right: 0% !important;
+}
+
+.boxConsultaExp {
+    font-size: 16px;
+    height: auto;
+    color: #808080;
+    overflow: hidden;
+}
+
+.boxConsultaExp .boxControles {
+    width: 100%;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.boxConsultaExp .boxControl {
+    width: 25%;
+    text-align: left;
+    font-family: 'open_sansregular';
+    font-size: 16px;
+}
+
+.boxConsultaExp .labelTitulo{
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #E6E6E6;
+}
+
+.boxConsultaExp .boxControl input {
+    width: 95%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0px solid #808080;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: #212529;
+    color: #E6E6E6;
+    border: 1px solid #808080;
+}
+
+
+.boxConsultaExp .boxControl select{
+    border: 0px solid rgba(0,0,0,0.4);
+    color: #3f4351;
+    width: 95%;
+    height: 36px;
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 0px 3px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #212529;
+    color: #E6E6E6;
+    background-image: none;
+    border: 1px solid #808080;
+    /*background: url(arrow-select.png) no-repeat right;*/
+}
+
+.boxConsultaExp .boxControlBuscar {
+    width: auto;
+    text-align: left;
+}
+
+.boxConsultaExp .btnBuscarExp {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 37px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #FF7600;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxConsultaExp .btnBuscarExp:active {
+    transform: scale(0.95)
+}
+
+
+.boxConsultaExp .resAcordeonBusqueda {
+    margin-top: 3%;
+}
+
+.boxConsultaExp .alert.alert-danger {
+    text-align: center;
+}
+
+.boxAcordHistoriaExp {
+    margin: 0 4%;
+}
+
+.boxAcordHistoriaExp .boxTituloWindow {
+    font-family: 'open_sanslight';
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 12px;
+    color: #FFF;
+}
+
+.boxContenido .boxColDocuA
+{
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+.boxContenido .boxColDocuB
+{
+    position: relative;
+    display: block;
+    float: left;
+    width: 60%;
+    height: 630px;
+}
+
+
+#acordeonEdeskDocumentos_001 {
+    height: 630px;
+}
+#acordeonEdeskDocumentos_001 .boxItemAcordeon .boxTitleHeader.active{
+    border-left: 10px solid #007BFF;
+}
+
+#acordeonEdeskExp_001 .boxTitleHeader.active {
+    border-left: 10px solid #007BFF;
+}
+
+.boxContenido .boxTituloDocu {
+    position: static;
+    text-align: center;
+    left: 10px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+}
+
+
+
+.boxConsultaExp .chkSoloAbiertos {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #FF7600;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxConsultaExp .chkSoloAbiertos:active {
+    transform: scale(0.95)
+}
+
+.boxConsultaExp .boxControlEstados {
+    color: #fff;
+    font-family: 'open_sanslight';
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    width: 98%;
+    height: auto;
+    line-height: 35px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    margin-left: 1%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+    overflow: hidden;;
+    position: relative;
+    width: 98%;
+    height: auto;
+    cursor: pointer;
+    overflow: visible;
+}
+
+
+.boxConsultaExp .boxCheckAbierto {
+    position: relative;
+    width: auto;
+    top: 0px;
+    height: 37px;
+    float: right;
+    text-align: center;
+    padding: 0px 15px;
+    display: inline-block;
+    line-height: 37px;
+    border-radius: 5px;
+    margin-right: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid #808080;
+    color: #ccc;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.boxConsultaExp .boxCheckAbierto.active {
+    background-color: #FF7600;
+    color: #fff;
+    border: 0;
+}
+
+.boxConsultaExp .boxCheckAbierto:active {
+    transform: scale(0.95);
+}
+
+.boxTitleHeader .btnNotify.YELLOWFLAG {
+    background-color: #F4BA00;
+}
+
+.boxTitleHeader .btnNotify.BLUEFLAG {
+    background-color: #00B5F4;
+}
+.boxTitleHeader .btnNotify.REDFLAG {
+    background-color: #FF6C6D;
+}
+
+.boxConsultaExp .boxFiltrosAplica {
+    float: right;
+    text-align: center;
+    padding: 0px 15px;
+    display: inline-block;
+}
+
+.boxConsultaExp .dropdown-menu {
+    background-color: rgb(204,204,204);
+}
+
+.boxConsultaExp .dropdown-menu li{
+    color: rgb(61,65,73);
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.boxContenedorNotif {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.boxContenedorNotif .boxTituloWindow {
+    font-family: 'open_sanslight';
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 12px;
+    color: #FFF;
+}
+
+.boxContenedorNotif .btnImprimirNotif {
+     position: relative;
+     width: 160px;
+     height: 35px;
+     left: 0;
+     right: 0;
+     margin: auto;
+     font-size: 14px;
+     margin-top: 10px;
+     text-align: center;
+     line-height: 35px;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+     font-family: 'open_sansregular';
+     /*background-color: #FF7600;*/
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+.boxContenedorNotif .btnImprimirNotif:active {
+    transform: scale(0.95)
+}
+
+.boxContenedorNotif .fila {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    height: auto;
+    font-size: 16px;
+}
+
+.boxContenedorNotif .cajastexto {
+    width: 95%;
+    height: 36px;
+    padding: 5px 5px;
+    display: inline-block;
+    font-size: 13px;
+    border: 0px solid #808080;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: #212529;
+    color: #E6E6E6;
+    border: 1px solid #505050
+}
+
+.boxContenedorNotif select {
+    border: 0px solid rgba(0,0,0,0.4);
+    color: #3f4351;
+    width: 95%;
+    height: 36px;
+    font-family: 'open_sansregular';
+    font-size: 13px;
+    border-radius: 7px;
+    padding: 0px 3px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #212529;
+    color: #E6E6E6;
+    background-image: none;
+    border: 1px solid #505050;
+}
+
+.boxContenedorNotif .labelTit {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #808080;
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+}
+
+.boxBotonera .boxBoton {
+    position: relative;
+    width: 160px;
+    height: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #FF7600;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxContenedorNotif .boxBotonera {
+    display: -webkit-inline-box;
+}
+
+.boxBotonera .boxBoton:active {
+    transform: scale(0.95)
+}
+
+
+#zonaLoadingImg {
+    position: fixed;
+    left: 60%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-image: url(../img/loading.gif);
+    background-size: 100% 100%;
+}
+
+
+#btnBuscarExpBoots {
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    width: 37px;
+}
+
+/*#btnFiltrarExp {
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/filtrar.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    margin-left: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #0A7CED;
+    /*background-size: 24px 24px;
+    background-position: center;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}*/
+
+#botoneraBuscarExp {
+    display: inline-flex;
+}
+
+#zonaListaFiltros {
+    text-align: left;
+    padding: 4px;
+    overflow: auto;
+}
+
+#zonaBoxBuscarExp .boxBtns {
+    display: inline-flex;
+}
+
+#btnImprimirNotif {
+     position: relative;
+     width: 160px;
+     height: 35px;
+     left: 0;
+     right: 0;
+     margin: auto;
+     font-size: 14px;
+     margin-top: 10px;
+     text-align: center;
+     line-height: 17px;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+     font-family: 'open_sansregular';
+     /*background-color: #FF7600;*/
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+#btnImprimirNotif:active {
+    transform: scale(0.95)
+}
+
+#btnGuardarRecibo, #btnImprimirNotif {
+    position: relative;
+    width: 160px;
+    height: 35px;
+    left: 0;
+    right: 0;
+    margin: 6px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 17px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    /*background-color: #FF7600;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btnGuardarRecibo:active, #btnImprimirNotif:active {
+    transform: scale(0.95)
+}
+
+#zonaboxEvidencia {
+    /*Temporal mienstras desarrollo*/
+    /*background-color: beige;*/
+}
+
+#zonaboxBotonNotificar {
+    height: 40px;
+}
+#btnShowNotificar {
+    width: 42px;
+    height: 42px;
+    background-image: url('../img/collapseBtn.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    margin-left: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #fff;
+    /*background-size: 24px 24px;
+    background-position: center;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*#btnHome {
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/casa.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    margin-left: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'open_sansregular';
+    background-color: #0A7CED;
+    /*background-size: 24px 24px;
+    background-position: center;*/
+/*    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}*/
+
+#zonaboxAcordeon, #zonaBoxDerAcordeon, #zonaBoxIzqAcordeon {
+    overflow: auto;
+    height: 100%;
+}
+
+#zonaBoxPrincipal {
+    overflow: auto;
+}
+
+#zonaboxVisor {
+    margin-top: -2%;
+}
+
+#zonaboxTituloDetalleEmb, #zonaboxTituloWindowEmbHis {
+    font-weight: bold;
+    color: #3c6aa5;
+}
+
+.boxItemAcordeon .boxTitleHeader.active {
+    /*border-left: 7px solid #007BFF;*/
+}
+.boxItemAcordeon .boxTitleHeader:active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.boxResult .boxDataAC {
+    background-color: #fff;
+}
+.boxItemAcordeon .titleHeader {
+    color: #007BFF;
+}
+.boxItemAcordeon .arrow {
+    color: #007BFF;
+}
+.boxResult .boxItemAcordeon .titleHeader{
+    color: #49616f;
+}
+.boxResult .containGridAC.header .celdaGrid {
+    background-color: whitesmoke;
+}
+.boxResult .celdaGrid {
+    background-color: #fff;
+}
+
+#zonaboxAcordeon {
+    overflow: scroll !important;
+}
+
+#zonaBoxIzqAcordeon {
+    overflow: auto;
+}
+
+#zonaBoxDerAcordeon {
+    overflow: auto;
+}
+
+
+.containGridAC {
+  grid-template-columns: 120px 120px 330px 120px 120px  120px!important;
+}
